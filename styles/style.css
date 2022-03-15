@@ -1,0 +1,60 @@
+@font-face {
+    font-family: Squid;
+    src: url(../assets/fonts/squids.woff);
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container,
+.brand-container,
+.logo-container {
+    display: flex;
+}
+
+.brand-container {
+    background-image: url('../assets/img/signup_background.jpg');
+    background-size: cover;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30vw;
+    height: 100vh;
+}
+
+.form-container {
+    width: 70vw;
+    height: 100vh;
+}
+
+.logo-container {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(138, 46, 236, 0.6);
+    margin: 25vh 0;
+    height: 20vh;
+}
+
+.logo-image {
+    width: auto;
+    height: 20vh;
+}
+
+.logo-text {
+    font-family: Squid, 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 3rem;
+}
+
+.image-credit {
+    color: white;
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+.image-credit a {
+    color: white;
+}
