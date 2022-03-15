@@ -20,31 +20,48 @@
             </footer>
         </section>
         <section class="form-container">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
-            <p>Sign up <em>now</em> to get started.</p>
-            <p>You <em>know</em> you want to.</p>
+            <div class="disclaimer">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
             <form action="#" method="get">
-                <h2>Let's do this!</h2>
-                <fieldset class="form-row">
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" id="first-name">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" name="last-name" id="last-name">
-                </fieldset>
-                <fieldset class="form-row">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-                    <label for="phone-number">Phone Number</label>
-                    <input type="tel" name="phone-number" id="phone-number">
-                </fieldset>
-                <fieldset class="form-row">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" name="confirm-password" id="confirm-password">
-                </fieldset>
+                <div class="common-fields">
+                    <p class="form-title">Let's do this!</p>
+                    <div class="form-row">
+                        <div class="field-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="first-name" id="first-name">
+                        </div>
+                        <div class="field-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="last-name" id="last-name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="field-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="field-group">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="tel" name="phone-number" id="phone-number">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="field-group">
+                            <label for="password">Password</label>
+                            <input class="error" type="password" name="password" id="password">
+                            <p class="error-message">* Passwords do not match</p>
+                        </div>
+                        <div class="field-group">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input class="error" type="password" name="confirm-password" id="confirm-password">
+                        </div>
+                    </div>
+                </div>
                 <button type="submit">Create Account</button>
-                <p>Already have an account? <a href="#">Log In</a></p>
+                <p class="account-check">Already have an account? <a href="#">Log In</a></p>
             </form>
         </section>
     </main>
